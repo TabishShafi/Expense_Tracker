@@ -8,14 +8,6 @@ TO run the Dapp
 3) now run this project on Local Web Server
 4) to have localhost on your system run "npm install -g http-server"
 5) in the project directory use "http-server" command to run the project on localhost 
-output should be like this
---------------
-"Starting up http-server, serving ./
-Available on:
-  http://192.168.0.5:8080
-  http://127.0.0.1:8080
-Hit CTRL-C to stop the server"
---------------
 6) after running project should ask permission to connect metamask with metamask popup on right corner
 7) if you don't have metamask installed install it first and run the project again 
 8) it will only work with ropsten addresses and ropsten testnet
