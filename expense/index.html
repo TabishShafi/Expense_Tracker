@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src='./node_modules/web3/dist/web3.min.js'></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+        <div class="container1">
+            <h2 class="text-center">Expense Tracker</h2>
+            
+            <h4 class="text-center" id="balance" ></h4>
+            
+            
+
+            <div class="expense-container text-center">
+                <h4 id="income" ></h4>
+                <h4 id="expense"></h4>
+            </div>
+            
+            <h4>History</h4>
+            <hr />
+
+            <ul class="transaction-list" id="array-list">
+            
+                
+            </ul>
+
+            <h4>Add Expense Transaction</h4>
+            <hr />
+            <form class="transaction-form">
+                <label>
+                    Enter Description <br />
+                    <input id="expense-description" type="text" required > 
+                </label>
+                <br />
+                <label>
+                    Enter Amount <br />
+                    <input id="expense-amount" type="number" required > 
+                </label>
+                <br />
+
+                <label>
+                    <input onclick="addExpense()" type="button" value="Add Expense Transaction" >
+                </label>
+              
+            </form>
+            <h4>Add Income Transaction</h4>
+            <hr />
+            <form class="transaction-form">
+                <label>
+                    Enter Description <br />
+                    <input id="income-description"  type="text" required > 
+                </label>
+                <br />
+                <label>
+                    Enter Amount <br />
+                    <input id="income-amount" type="number" required > 
+                </label>
+                <br />
+
+                <label>
+                    <input onclick="addIncome()" type="button" value="Add Income Transaction" >
+                </label>
+            </form>
+            <script src="index.js"></script> 
+        </div>
+
+        
+</body>
+</html>
